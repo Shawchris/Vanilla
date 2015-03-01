@@ -4,14 +4,21 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 
 public class MainActivity extends ActionBarActivity {
+    private Button AnswerYesButton, AnswerNoButton;
+    private EditText usersNameEditText;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        AnswerYesButton = (Button) findViewById()
     }
 
 
@@ -35,5 +42,11 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onYesButtonClick(View view) {
+    }
+
+    public void onNoButtonClick(View view) {
     }
 }
